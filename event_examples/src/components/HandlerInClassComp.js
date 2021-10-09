@@ -10,19 +10,19 @@ class EventBind extends React.Component {
         this.handleClick2 = this.handleClick2.bind(this);
     }
 
-  handleClick = () => {
-    this.setState({message:"Goodbye!"})
+  handleClick = (name) => {
+    this.setState({message:`Goodbye ${name}`})
   };
-  handleClick2 = () => {
-    this.setState({message:"Hello"})
+  handleClick2 = (name) => {
+    this.setState({message:`Hello ${name}`})
   };
 
   render() {
     return (
       <div> 
-        <button onClick={this.handleClick}>Goodbye</button>
+        <button onClick={()=>this.handleClick("Hilmi")}>Goodbye</button>
          <p>{this.state.message}</p>
-        <button onClick={this.handleClick2}>Hello</button>
+        <button onClick={()=>this.handleClick2("Hilmi")}>Hello</button>
       </div>
     );
   }
