@@ -3,7 +3,6 @@ import './App.css';
 import Counter from './components/Counter'
 import EventBind from './components/HandlerInClassComp';
 import MouseEvents from './components/MouseEvents'
-import KeyPress from './components/KeyPress';
 function App() {
   return (
     <div className="App">
@@ -14,7 +13,7 @@ function App() {
       <hr/>
       <MouseEvents/>
       <hr/>
-      <KeyPress/>
+  
     </div>
   );
 }
